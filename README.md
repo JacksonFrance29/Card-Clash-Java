@@ -1,33 +1,44 @@
 # Card Clash (Java)
 
-A Java-based card game simulation that models a turn-based battle between a player and a computer opponent.
-The project emphasizes object-oriented design, clean class structure, and program control flow.
+A Java-based, console-driven card game simulation that models a simplified “War”-style game between a player and a computer opponent.  
+The project emphasizes object-oriented design, clean class responsibilities, and game-state management.
 
-## Motivation
-This project was created to practice object-oriented programming concepts in Java, including class design, state management, and debugging through a complete game simulation.
+## Overview
+Card Clash simulates a full card game using a standard deck. Cards are shuffled, dealt evenly between two players, and played round-by-round until one player wins or a maximum round limit is reached to prevent infinite games.
 
-## Description
-Card Clash simulates a shuffled deck of cards that is split evenly between two players.
-Each round, both players play a card and game logic determines the winner of the round.
-The simulation continues until a win condition is met or a maximum round limit is reached.
+The project was built to demonstrate core Java concepts, including classes, encapsulation, control flow, collections, and debugging.
 
-## Tech Stack
+## Project Structure
+```text
+src/
+├── Card.java      // Represents an individual playing card
+├── Deck.java      // Creates, stores, and shuffles the deck
+├── Player.java    // Manages a player's hand and actions
+└── CardClash.java // Main game loop and simulation logic
+///
+
+
+## How It Works
+1. A standard 52-card deck is created and shuffled.
+2. Cards are dealt evenly between the player and the computer.
+3. Each round:
+   - Both players draw a card
+   - The higher-value card wins the round
+   - The winner collects both cards
+   - If both players draw cards of equal value, a "war" occurs:
+        - Each player places additional cards
+        - The final card is compared
+        - The player with the higher card collects all cards from that round
+4. The game continues until:
+   - One player runs out of cards, or
+   - A maximum round limit is reached to prevent infinite play
+5. The winner is announced based on who has the most cards at the end of the simulation.
+
+## Technologies Used
 - Java
 - Object-Oriented Programming (OOP)
 - Java Collections (`ArrayList`)
+- Control flow & debugging
 
-## Class Structure
-- `Card` – Represents a playing card with a value and suit
-- `Deck` – Creates, stores, and shuffles the deck
-- `Player` – Manages a player’s card pile and game state
-- `CardClash` – Controls the game loop, round logic, and win conditions
-
-## How It Works
-1. A deck of cards is created and shuffled.
-2. Cards are evenly distributed between the player and the computer.
-3. Each round:
-   - Both players play a card
-   - Cards are compared
-   - The winner collects the cards
-4. The game ends when a player runs out of cards or a round limit is reached.
-
+## Purpose
+This project was created as a learning exercise to reinforce Java fundamentals and object-oriented design principles, with a focus on writing readable, modular, and maintainable code.
