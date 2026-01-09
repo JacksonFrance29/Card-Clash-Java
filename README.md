@@ -1,12 +1,12 @@
 # Card Clash (Java)
 
 A Java-based, console-driven card game simulation that models a simplified “War”-style game between a player and a computer opponent.  
-The project emphasizes object-oriented design, clean class responsibilities, and game-state management.
+This project emphasizes object-oriented design, class responsibilities, and game-state management.
 
 ## Overview
 Card Clash simulates a full card game using a standard deck. Cards are shuffled, dealt evenly between two players, and played round-by-round until one player wins or a maximum round limit is reached to prevent infinite games.
 
-The project was built to demonstrate core Java concepts, including classes, encapsulation, control flow, collections, and debugging.
+This project was built to demonstrate core Java concepts, including classes, encapsulation, control flow, collections, and debugging.
 
 ## Project Structure
 ```text
@@ -38,6 +38,3 @@ src/
 - Object-Oriented Programming (OOP)
 - Java Collections (`ArrayList`)
 - Control flow & debugging
-
-## Purpose
-This project was created as a learning exercise to reinforce Java fundamentals and object-oriented design principles, with a focus on writing readable, modular, and maintainable code.
