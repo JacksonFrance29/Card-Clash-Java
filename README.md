@@ -1,4 +1,4 @@
-# Card Clash (Java)
+# Card Clash
 
 A Java-based, console-driven card game simulation that models a simplified “War”-style game between a player and a computer opponent.  
 This project emphasizes object-oriented design, class responsibilities, and game-state management.
